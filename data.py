@@ -1,4 +1,3 @@
 Adding file
+New line
 #python file
-Adding second line  
-Adding third line
