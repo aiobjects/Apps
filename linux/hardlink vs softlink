@@ -1,0 +1,33 @@
+Hard link
+-------------
+1.It is a copy of the original file                 
+that serves as a pointer to the same file,
+allowing it to access even if the original 
+file is deleted.
+2.It has a similar inode number to the target file.
+3.It doesn't allow the relative path.
+4.It cannot be formed outside the file system.
+5.It is faster.
+6.The "ln" command is used to make a hard link in Linux.
+ln  [original filename] [link name] 
+7.It may only link to a file.
+8.It remains valid even if the target file is deleted.
+9.Even if we change the filename of the original file 
+then also the hard links properly work.
+
+Soft Link
+------------
+1.It is a short pointer file that links a filename to a pathname.
+It's nothing more than a shortcut to the original file,
+much like the Windows OS's shortcut option.
+2.It has different inode number.
+3.It allows both relative and absolute paths.
+4.It can be formed outside the file system.
+5.It is slower.
+6.The "ln -s" command is used to make a soft link in Linux.
+ln  -s [original filename] [link name] 
+7.It link both directory and file.
+8.It becomes invalid when the originating file is deleted.
+9.If we change the name of the original file 
+then all the soft links for that file become dangling 
+i.e. they are worthless now.
